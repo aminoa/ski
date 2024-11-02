@@ -41,7 +41,7 @@ struct ContentView: View {
             .background(Color.blue)
             .cornerRadius(10)
 
-            NavigationLink(destination: Text("You are logged in"), isActive: $showingLoginScreen) {
+            NavigationLink(destination: Text("Congratulations, you solved the challenge!"), isActive: $showingLoginScreen) {
                 EmptyView()
             }
         }
@@ -50,7 +50,8 @@ struct ContentView: View {
     func authenticateUser(username: String, password: String) {
         if username == "OSIRIS" {
             wrongUsername = 0
-            if password == "csaw_ctf{stringed}" {
+            print("flag{bruh stringing the file isn't the strat}")
+            if password == "csaw_ctf{" + getPassword() + "}" {
                 wrongPassword = 0
                 showingLoginScreen = true 
             } else {
@@ -59,6 +60,23 @@ struct ContentView: View {
         } else {
             wrongUsername = 2
         }
+    }
+
+    func getPassword() -> String {
+        let part1 = "purple"
+        let part2 = "nxhtrnslfuuqj"
+        return part1 + helper1(part:part2)
+    }
+
+    func helper1(part: String) -> String {
+        var result_chars : [Character] = []
+
+        for char in part {
+            let shift = char.asciiValue! - 5
+            result_chars.append(Character(UnicodeScalar(shift)))
+        }
+
+        return String(result_chars)
     }
 }
 
