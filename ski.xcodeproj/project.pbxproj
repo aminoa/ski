@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		40C693E52CD5BD47001A81B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C693E22CD5BD47001A81B2 /* ContentView.swift */; };
+		40C693E62CD5BD47001A81B2 /* skiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C693E32CD5BD47001A81B2 /* skiApp.swift */; };
+		40C693E72CD5BD47001A81B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C693DF2CD5BD47001A81B2 /* Preview Assets.xcassets */; };
+		40C693E82CD5BD47001A81B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C693E12CD5BD47001A81B2 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		40C693CE2CD57FEE001A81B2 /* ski.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ski.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40C693DF2CD5BD47001A81B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40C693E12CD5BD47001A81B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40C693E22CD5BD47001A81B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		40C693E32CD5BD47001A81B2 /* skiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skiApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		40C693D02CD57FEE001A81B2 /* ski */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ski;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		40C693CB2CD57FEE001A81B2 /* Frameworks */ = {
@@ -32,7 +35,7 @@
 		40C693C52CD57FEE001A81B2 = {
 			isa = PBXGroup;
 			children = (
-				40C693D02CD57FEE001A81B2 /* ski */,
+				40C693E42CD5BD47001A81B2 /* ski */,
 				40C693CF2CD57FEE001A81B2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +46,25 @@
 				40C693CE2CD57FEE001A81B2 /* ski.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		40C693E02CD5BD47001A81B2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				40C693DF2CD5BD47001A81B2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		40C693E42CD5BD47001A81B2 /* ski */ = {
+			isa = PBXGroup;
+			children = (
+				40C693E02CD5BD47001A81B2 /* Preview Content */,
+				40C693E12CD5BD47001A81B2 /* Assets.xcassets */,
+				40C693E22CD5BD47001A81B2 /* ContentView.swift */,
+				40C693E32CD5BD47001A81B2 /* skiApp.swift */,
+			);
+			path = ski;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +81,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				40C693D02CD57FEE001A81B2 /* ski */,
 			);
 			name = ski;
 			packageProductDependencies = (
@@ -109,6 +128,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C693E72CD5BD47001A81B2 /* Preview Assets.xcassets in Resources */,
+				40C693E82CD5BD47001A81B2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C693E52CD5BD47001A81B2 /* ContentView.swift in Sources */,
+				40C693E62CD5BD47001A81B2 /* skiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,7 +48,7 @@ struct ContentView: View {
     }
 
     func authenticateUser(username: String, password: String) {
-        if username == "osiris" {
+        if username == "OSIRIS" {
             wrongUsername = 0
             if password == "csaw_ctf{stringed}" {
                 wrongPassword = 0
